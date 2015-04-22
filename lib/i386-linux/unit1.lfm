@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 334
+  Height = 346
+  Top = 277
+  Width = 472
+  Caption = 'Linux Shell command Lancher'
+  ClientHeight = 346
+  ClientWidth = 472
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  LCLVersion = '1.2.4.0'
+  object ListBox1: TListBox
+    Left = 0
+    Height = 312
+    Top = 34
+    Width = 472
+    Align = alClient
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    OnDblClick = ListBox1DblClick
+    ScrollWidth = 470
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 472
+    Align = alTop
+    ClientHeight = 34
+    ClientWidth = 472
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 1
+      Height = 32
+      Top = 1
+      Width = 311
+      Align = alClient
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 312
+      Height = 32
+      Top = 1
+      Width = 68
+      Align = alRight
+      Caption = 'Run'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+    object Button2: TButton
+      Left = 380
+      Height = 32
+      Top = 1
+      Width = 91
+      Align = alRight
+      Caption = 'SetCommand'
+      OnClick = Button2Click
+      TabOrder = 2
+    end
+  end
+end
